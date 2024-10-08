@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="calculator2.css" rel="stylesheet">
+</head>
+<body>
+    <div id="mother">
+    <div id="parent">casio calculator
+        
+
+    </div>
+    <br>
+
+    <input type="number" id="first" >
+    <br><br>
+    <input type="number"id="second">
+    <br><br>
+  <div id="conatiner-1">
+    <button id="btn" onclick="add()">Add(+)</button>
+    <button id="btn-2" onclick="sub()">Sub(-)</button>
+
+  </div>
+  <div id="conatiner-2">
+    <button id="btn-3" onclick="mult()">Mult(*)</button>
+    <button id="btn-4" onclick="div()">Div(/)</button>
+  </div>
+  <div id="result">
+  
+    <input type="text" id="result" >
+  </div>
+  
+  <div>
+    <button id="clear" click="clear()">clear</button>
+    
+  </div>
+  <script>
+    function add(){
+        var num1=document.getElementById("first").value
+        var num2=document.getElementById("second").value
+        var result=parseInt(num1)+parseInt(num2)
+        document.getElementById('result').innerHTML="result="+result
+        
+    }
+    function sub(){
+      var num1=document.getElementById("first").value
+      var num2=document.getElementById("second").value
+      var result=parseInt(num1)-parseInt(num2)
+      document.getElementById("result").innerHTML="result="+result
+    }
+    function mult(){
+      var num1=document.getElementById("first").value
+      var num2=document.getElementById("second").value
+      var result=parseInt(num1)*parseInt(num2)
+      document.getElementById("result").innerHTML="result="+result
+    }
+    function div(){
+      var num1=document.getElementById("first").value
+      var num2=document.getElementById("second").value
+      var result=parseInt(num1)/parseInt(num2)
+      document.getElementById("result").innerHTML="result="+result
+    }
+    function clear(){
+      document.getElementById("clear").innerHTML="clear="+result
+      
+    }
+  </script>
+    
+    
+</body>
+</html>

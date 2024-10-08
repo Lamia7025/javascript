@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the element object</h1>
+    <h2>the removechild() method</h2>
+    <p>jjjkjjjllklklklkl</p>
+    <button onclick="myfunction()">remove</button>
+    <button onclick="">insert</button>
+    <ul id="mylist">
+        <li id="mango">mango</li>
+        <li>apple</li>
+        <li>kiwi</li>
+    </ul>
+    <script>
+        var listitems=document.getElementById('mango')
+        function myfunction(){
+            const list=document.getElementById("mylist")
+            list.removeChild(list.firstElementChild)
+
+        }
+        function myfunctions(){
+            const newMango = listitems.cloneNode(true); // Clone the mango item
+            list.appendChild(newMango); // Add it back to the list
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

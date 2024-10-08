@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle{
+            background-color: brown;
+            font-size: 40px;
+        }
+        .remove{
+            color:blue;
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>hai</h1>
+    <h2 id="remove" class="remove">hai bye girl</h2>
+    <button onclick="myfunction()">add</button>
+    <button onclick="removefunction()">remove</button>
+    <p>click "add" to add "mystyle" class to hola</p>
+    <div id="hola">
+        <p>i am zara</p>
+
+    </div>
+    
+</body>
+<script>
+    function myfunction(){
+        const list=document.getElementById("hola").classList
+        list.add("mystyle")
+    }
+    function removefunction(){
+        const h2=document.getElementById("remove").classList
+        h2.remove("remove")
+    }
+</script>
+</html>

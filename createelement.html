@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var heading=document.createElement('h1')
+        heading.innerHTML="good"
+        document.body.appendChild(heading)
+        var button=document.createElement('button')
+        button.innerHTML="here"
+        document.body.appendChild(button)
+        button.addEventListener("click",function(){
+            document.body.style.backgroundColor="red"
+
+        })
+        var button2=document.createElement('button')
+        button2.innerHTML="remove"
+        document.body.appendChild(button2)
+        button2.addEventListener("click",function(){
+            document.body.style.backgroundColor=""
+        })
+        
+
+    </script>
+    
+</body>
+</html>

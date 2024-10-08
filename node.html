@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping list</title>
+  </head>
+  <body>
+    <h1 title="hi">what to buy</h1>
+    <p title="a gentle remainder">do not forget to buy this stuff</p>
+    <ul id="purchases">
+      <li>milk</li>
+      <li>popcorn</li>
+      <li>bag</li>
+      <li>poppines</li>
+    </ul>
+    <script>
+      const heading = document.querySelector("h1")
+      
+      if(heading!== null){
+        console.log("nodetype:"+heading.nodeType)
+        console.log("nodename:"+heading.nodeName)
+        console.log("nodevalue:"+heading.nodeValue)
+      }
+ const paragraphElement = document.querySelector('p')
+    const  textNode =paragraphElement.firstChild
+    console.log("nodetype:" + textNode.nodeType)
+    console.log("nodename:"+textNode.nodeName)
+    console.log("nodevalue:"+textNode.nodeValue)
+
+
+
+      
+
+    </script>
+  </body>
+</html>

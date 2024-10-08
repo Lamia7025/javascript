@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shpping list</title>
+  </head>
+  <body>
+    <div id="parent">
+      <h1 class="heading">what to buy</h1>
+      <p title="a gentle reminder">do not forget to buy this stuff</p>
+      <ul id="purchases">
+        <li>a thin of beans</li>
+        <li>cheese</li>
+        <li>milk</li>
+        <li>butter</li>
+      </ul>
+    </div>
+    <script>
+      const parentelement = document.getElementById("parent");
+      console.log(parentelement);
+      console.log(parentelement.parentNode);
+      const child=parentelement.children
+      console.log(child)
+      const firstchild=parentelement.firstChild
+      console.log(firstchild)
+      const lastchild=parentelement.lastChild
+      console.log(lastchild)
+      const ulelement=document.getElementById("purchases")
+      const previoussiblings=ulelement.previousSibling
+      console.log(previoussiblings)
+      const nextsiblings=ulelement.nextSibling
+      console.log(nextsiblings)
+
+    </script>
+  </body>
+</html>

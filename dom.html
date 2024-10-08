@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <h1 id="head">hey dude</h1>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore qui
+      non doloribus consequatur reiciendis! Rerum voluptatem quasi labore
+      aspernatur fugit optio esse a nostrum, asperiores amet delectus temporibus
+      necessitatibus quas!
+    </p>
+    <p class="para">i am always like this</p>
+    <script>
+      let heading = document.getElementById("head");
+      let paragra=document.getElementById("para")
+
+      const para=document.getElementsByTagName("p")
+      heading.innerHTML="keep smile"
+      heading.style.color="red"
+      heading.style.fontSize="20px"
+      heading.style.fontFamily="verdana"
+
+      console.log(para);
+      para.innerHTML="come on everybody"
+      paragra.style.color="blue"
+    //   for(i=0;i<para.length;i++){
+    //     para[i].innerHTML="come on everybody"
+    //   }
+      let param=document.getElementsByClassName("para")
+      console.log(param)
+      
+
+
+      
+
+
+    </script>
+  </body>
+</html>

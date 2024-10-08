@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">ok</button>
+    <p id="para"></p>
+
+    <script>
+        function handlechange(event){
+            console.log(event.target.value)
+        }
+        var button=document.getElementById('btn')
+        button.addEventListener('mouseover',function(e){
+            var para = document.getElementById("para")
+            para.innerHTML ="mouse overed"
+console.log(e)
+        })
+
+    </script>
+    
+</body>
+</html>
